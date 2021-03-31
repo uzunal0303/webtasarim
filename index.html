@@ -1,0 +1,229 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Developers</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/siteLogo.png" type="image/x-icon">
+  
+</head>
+
+<body>
+    <header>
+
+        <div class="header-top bg-primary">
+            <div class="container">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mucahit.uzunal.9"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/uznl_mucahit/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCPJqB7bUIP9aIArmjyoOZbA"><i class="fa fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Developers <img src="img/siteLogo.png" class="navlogo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#anasayfa">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#kategori">Post 1</a></li>
+                                <li><a class="dropdown-item" href="#kategori">Post 2 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#iletisim" tabindex="-1" aria-disabled="true">İletişim</a>
+                        </li>
+                    </ul>
+                    <form id="searchForm" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Arama" aria-label="Search">
+                        <button class="btn btn-secondary search" type="submit">Arama</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/web-yazilim-uzmanligi-870x440.jpg" class="d-block w-100 devs" alt="web yazilim ">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/web-tasarim.jpg" class="d-block w-100 devs" alt="web yazilim">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/web-tasari.png" class="d-block w-100 devs" alt="mobil yazilim">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4-1.jpg" class="d-block w-100 devs" alt="mobil yazilim">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="anasayfa">
+        <div class="container">
+            <div class="anasayfa">
+                <div class="row">
+                    <div class="col-6">
+                        
+
+<h3>Webpack nedir?</h3>                       
+
+<p>
+Önceki yazımda JavaScript’in varsayılan olarak sunduğu modules kavramından bahsetmiştim. Bu yazımda da sizlere Webpack ile bir web uygulaması nasıl geliştirilir ona değineceğiz.</p>
+
+<p>Halihazırda web uygulaması geliştiriyorsanız Angular, Vue ve React gibi pek çok modern JavaScript geliştirme platformlarında Webpack’e rast gelmişsinizdir. Webpack, adından da bir web paketleyicisi olduğu anlaşılabileceği gibi, en temel haliyle ele aldığımızda, modern JavaScript uygulamaları için üretilen bir module bundler’dır (modül paketleyicisidir) diyebiliriz. Webpack, bir projede çalıştırıldığında, projenin ihtiyaç duyabileceği her modül tipini alan bir dependency graph (bağımlılık grafiği) oluşturur ve bu grafiğin işlenmesi sonucu çıktı olarak bir uygulama paketi üretir.</p>
+                  <h3>Webpack modülü nedir?</h3>
+                   
+<p>Node.js modüllerinin aksine, webpack modüllerinde modüller arası bağımlılıklar farklı şekillerde ifade edilebilir. Örneğin:
+
+ES2015’teki import ifadesi,
+CommonJS’teki require() ifadesi,
+AMD’deki define ve require ifadeleri
+CSS/SASS/LESS dosyalarındaki @importifadesi,
+CSS’te görsel yükleme için oluşturulan oluşturulan url(...) fonksiyonu ve HTML’deki ifadesi ile modül bağımlılığı sağlanabilir.</p>
+                    </div>
+                    <div class="col-6">
+                       <h3>Modül nedir?</h3>
+                        
+<p>
+Modül kavramı, sadedece JavaScript’e özgü olmamakla birlikte, bir yazılımın işlev bazında kendi başına çalışabileceği parçalara bölündüğünde, oluşan her bir parça modül olarak nitelendirilir. Her modül bütün bir programın özel bir fonksiyonundan sorumludur. Bu sayede code-splitting gibi kod ayırma teknikleriyle uygulamanın daha performanslı çalışabileceği gibi, aynı zamanda da modüller sayesinde uygulamanın test edilmesi ve bakımı da daha kolay hale gelmektedir. Node.js, neredeyse kuruluşundan beri modüler programlamayı desteklese de, Web’de varsayılan olarak modüler yapıların desteklenmesi ise Node.js’ten çok daha sonra gerçekleşmiştir. Bu süre zarfında modüler JavaScript programlamayı gerçekleştirmek için pek çok farklı araç ortaya çıkmıştır. Bu araçlardan edinilen deneyimleri bünyesine katan Webpack, herhangi bir projede modüler yapının oluşmasına olanak sağlamaktadır.</p>
+                  <h3>Webpack’teki temel kavramlar</h3>
+                   <p>
+Webpack’te, bir projeyi bundle haline getirmek için Webpack’in 4.0.0 sürümünden beri bir config dosyası oluşturmaya gerek kalmasa da, kendi yapılandırma dosyanızı oluşturmak istediğinizde webpack’in temel kavramlarına aşina olmanız gereklidir. Bunlar:</p>
+
+Entry (başlangıç noktası)
+Output (çıktı dosyası)
+Loaders (yükleyiciler)
+Plugins (eklentiler)
+Mode (PROD ve DEV modları)
+Browser Compatibility (tarayıcı uyumluluğu) şeklindedir.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sayfa-bolmesi"></div>
+
+    <div id="hakkimizda">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <img class="img-fluid" src="img/hakkimizda.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <h3>HAKKIMIZDA</h3>
+                    <p>Sunmuş olduğumuz hizmetin yanı sıra kendi müşterilerimize ihtiyaç dahilinde domain ve hosting hizmeti de vermekteyiz.
+
+Sunmuş olduğumuz hizmetin yanı sıra kendi müşterilerimize ihtiyaç dahilinde domain ve hosting hizmeti de vermekteyiz. Vermiş olduğumuz hizmetlerin çoğunun birbiriyle ilişki olmasından dolayı ilgili domain ve hosting işlemleri hakkında müşterilerimize bilgi vermekte ve diğer hizmetlerimizle bütünleşen bu süreci de kaliteli bir şekilde yönetmekteyiz. </p>
+                    <p>Her zaman daha iyiye giden bir kullanıcı deneyimi için, Demircode olarak sağlamış olduğumuz tüm ürün ve hizmetlerin arkasındayız.
+
+Demircode olarak sağlamış olduğumuz tüm ürün ve hizmetlerin arkasında müşterilerimizin memnuniyetlerini arttırmak amacıyla durmaksızın çalışmaktayız. Yaşanacak her türlü sorunu hızlıca çözmek başlıca görevlerimizden. Ayrıca hızlıca gelişen ve değişen sektörlere ayak uydurabilmeleri adına ürün ve hizmetlerimizi sıklıkla güncelleyerek müşterilerimizi rakiplerinden bir adım öteye taşımaktayız.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sayfa-bolmesi2"></div>
+    <div id="kategori">
+        <div class="container container-tabs">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item webYazilim" role="presentation">
+                <a class="nav-link  active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Simgeler dizinler ve semboller </a>
+            </li>
+            <li class="nav-item mobilYazilim" role="presentation">
+                <a class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Göstergebilim ve renk teorisi </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <h3>Simgeler, dizinler ve semboller</h3>
+                <p>Amerikalı filozof Charles Sanders Peirce, Saussure'ün çalışmaları sırasında, işaretler ve işaret sistemlerini de araştırıyordu. Peirce, göstergebilim olarak da adlandırdığı, bireysel işaret ve sınıflandırmalarının bir teorisini formüle etti.</p>
+
+Peirce'e göre, işaretlerin üç sınıflandırması vardır:
+
+<p>Simge - temsil ettiği şeye benziyor. Örneğin, bir teknenin resmi bir tekneye benziyor.
+Dizin - bu, işaret ile temsil ettiği şey arasındaki bir tür fiziksel bağlantıyı gösterir. Örneğin, yangını gösteren bir ayak izi veya duman bulutu.
+Sembol - bağlantı yok. Bunun yerine, tabelayı izleyen kişinin bağlantıyı öğrenmesi gerekir. Örneğin, bir başparmak yukarıya. Havadaki bir başparmak, kendisine eklenen sosyalleşmiş bir anlam olmadan kendi başına hiçbir şey ifade etmez.
+Peirce, bir işaretin hiçbir zaman tamamen sabit bir anlama sahip olamayacağına, işaretlerin yeniden kullanılabileceğine ve yeniden icat edilebileceğine inanıyordu. Örneğin, numara işaretini alın: #. Zamanın bir noktasında bu sembol yalnızca bir sayıyı temsil ediyordu. Şimdi, dünyanın dört bir yanındaki pek çok insan, uzun süredir arkasında "pound anahtarı" olarak bilinen günleriyle onu bir "hashtag" olarak görüyor.
+
+İşlenen göstergebilimin temelleri ile, aşağıdaki bölümlerde sembolleri ve işaretleri anlamanın web tasarımımızı ve nihai kullanıcı deneyimimizi geliştirmemize nasıl yardımcı olabileceği hakkında daha fazla bilgi edineceğiz.</p>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+               <h3>Göstergebilim ve renk teorisi</h3>
+                
+<p>Bazı durumlarda, bir işaret tek başına kullanıcıya, işaretin iletmeye çalıştığı şeyin tam hikayesini anlatamaz. Renk teorisi, kullanıcının doğru şekilde yorumlayacağı bir mesajı iletmek için rengin işaretlerle nasıl birleştirilmesi gerektiğini belirler.
+
+Daha önceki dur işareti örneğine dönersek, dur işaretini sadece beşgen şeklinde olduğu ve üzerinde DUR yazdığı için değil, aynı zamanda işaretin kendisi kırmızı olduğu için tanıdığımızı hatırlayacaksınız. Birçok kültürde kırmızı, tehlikeyi simgeler. Bu nedenle, kırmızı bir dur işareti gördüğümüzde, riski önlemek için yavaşlıyoruz.</p>
+
+Pek çok web sitesinde, geliştiriciler bir kullanıcı profili ayarlarında kırmızıyı kullanarak, bu bölümde gerçekleştirilen herhangi bir eylemin geri döndürülemez sonuçları olabileceği bir "tehlikeli bölgeyi" belirtmek için aynı mantığı izler. Örneğin, bir hesabı silme düğmesi genellikle kırmızıdır, çünkü bir kullanıcı hesabı silerse hesabını tamamen kapatma tehlikesiyle karşı karşıyadır.
+
+<p>Benzer şekilde yeşil, genellikle başarı veya "gitme" ile ilişkilendirilen bir renktir. Kullanıcı hesabınızla ilişkili bazı ayarları kaydetmenize izin veren bir web uygulaması kullandıysanız, başarılı bir şekilde kaydettikten sonra yeşil bir onay işareti görebilirsiniz. Ayrıca, bir şey hala taslak modundayken sarı veya turuncu renklerin kullanıldığını fark edebilirsiniz, çünkü bu renkler (trafik ışığı ile olduğu gibi) yavaş veya eksik ilerlemeyi gösterir.
+
+Dikkat edilmesi gereken daha birçok örnek var, ancak bir dahaki sefere kendinizi bir sayfada bir işlem yaparken bulduğunuzda, web sitesinin sizinle iletişim kurmak için bir renk ve işaret kombinasyonu kullanıp kullanmadığını deneyin ve gözlemleyin.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="sayfa-bolmesi3"></div>
+    <div id="iletisim">
+        <div class="container container-contact">
+            <h3>&nbsp; İletişim Formu</h3>
+            <form action="" class="form-group">
+                <input class="form-control control" type="text" placeholder="Adınız Soyadınız...">
+                <input class="form-control control" type="text" placeholder="Mail adresiniz...">
+                <textarea class="form-control control" name="" id="" cols="30" rows="10" placeholder="Yorumunuz..."></textarea>
+                <div class="form-kontrol float-end">
+                    <button class="btn btn-success" type="submit">Gönder</button>
+                    <button class="btn btn-danger" type="reset">SİL</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top text-center">
+            <img class="footer-logo" src="img/siteLogo.png" alt="">
+        </div>
+        <div class="footer-bottom text-center">
+            &copy; BU SİTENİN BÜTÜN HAKLARI MÜCAHİT UZUNAL'A AİTTİR.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="js/form.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

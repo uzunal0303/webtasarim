@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    padding: 0 15% 0 15%;
+}
+e
+.devs {
+    width: 100%;
+    height: 500px;
+}
+
+.container-tabs {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.search {
+    width: auto;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.nav-item {
+    width: 40%;
+    margin-left: 7%;
+    height: auto;
+    text-align: center;
+}
+
+.nav-link {
+    border-radius: 4rem !important;
+}
+
+.tab-content {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    border: 3px solid gray;
+    border-radius: 100px;
+    background-color: #b0c4de;
+}
+
+.sayfa-bolmesi {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/sayfaBolmesi.jpg);
+}
+
+.sayfa-bolmesi2 {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/sfbolmesi.jpg);
+}
+
+.sayfa-bolmesi3 {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/syfaBlmesi.jpg)
+}
+
+.row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-contact {
+    padding: 5%
+}
+
+.form-kontrol {
+    padding: 10px;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+footer {
+    background-color: rgb(13, 110, 253);
+    color: white;
+}
+
+.footer-top {
+    font-size: 82px;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.fa {
+    color: white;
+    font-size: 28px !important;
+}
+
+.social-icons {
+    margin-right:0% !important;
+    margin-left: 80% !important;
+   
+}
+.navlogo{
+    width: 50px;
+    height: 50px;
+}
+
+
+
